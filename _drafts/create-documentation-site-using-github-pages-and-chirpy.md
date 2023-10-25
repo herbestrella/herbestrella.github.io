@@ -102,4 +102,11 @@ This is where the magic happens! If things are looking like you want it to and a
 
 > Assuming everything went well you should be able to navigate to your actions tab on your github repo and see the "all the workflows" if those run and are successful you site is LIVE!
 
+### Actions Page with Previous Changes
 ![Github Workflows](/assets/images/githubio-all-workflows.png)
+
+### Actions Page with A Fresh Change
+![Github Workflows](/assets/images/githubio-all-workflows-2.png)
+
+### Actions Page with a Completed Change
+![Github Workflows](/assets/images/githubio-all-workflows-3.png)
