@@ -34,6 +34,7 @@ Review the [Getting Started Page](https://chirpy.cotes.page/posts/getting-starte
     * Must be Public
     * Name has to be <your_exact_username>.github.io
 - Clone the Repository
+
 ```sh
 # this command will clone the repo to the directory you're working in on your terminal
 git clone git@github.com:<your_exact_username>/<your_exact_username>.github.io
@@ -47,6 +48,7 @@ code .
 # serve the site on your local machine type "bundle exec jekyll s" in your terminal
 bundle exec jekyll s
 ```
+
 > Use your browser and go to the following URL http://localhost:4000/ and it will load your site locally
 
 ## Make It Your Own
@@ -79,26 +81,29 @@ gem 'jekyll-compose', group: [:jekyll_plugins]
 # once it's saved you can run the bundle command from your terminal to install the plugin
 bundle
 ```
+
 My workflow has been pretty simple so far, start a draft...
+
 ```sh
 bundle exec jekyll draft "draft-name.md"
 ```
+
 > command creates a file in the _drafts directory with the name specified
 
-When the draft is ready to publish
+When the draft is saved and ready to publish
+
 ```sh
-bundle exec jekyll publish "draft-name.md"
+bundle exec jekyll publish "_drafts/draft-name.md"\\
 ```
+
 > file gets moved from _drafts to _posts directory and if all goes well you should be able to refresh your page http://localhost:4000/ and see your updated post.
 
 ## Push It Good
+
 This is where the magic happens! If things are looking like you want it to and all files are saved you should have changes ready to commit (at the very least your _config.yml has been changed). I just use VSCode and don't really bother with running git commands.
 
 - Ensure all the open files are saved
-- Publish your draft
-    ```
-    bundle exec jekyll publish >drafts/<name_>
-    ```
+- Ensure your draft(s) are published
 - Click on Source Control
 - Stage all changes
 - Enter in a comment, then click Commit
@@ -107,10 +112,13 @@ This is where the magic happens! If things are looking like you want it to and a
 > Assuming everything went well you should be able to navigate to your actions tab on your github repo and see the "all the workflows" if those run and are successful you site is LIVE!
 
 ### Actions Page with Previous Changes
+
 ![Github Workflows](/assets/images/githubio-all-workflows.png)
 
 ### Actions Page with A Fresh Change
+
 ![Github Workflows](/assets/images/githubio-all-workflows-2.png)
 
 ### Actions Page with a Completed Change
+
 ![Github Workflows](/assets/images/githubio-all-workflows-3.png)
