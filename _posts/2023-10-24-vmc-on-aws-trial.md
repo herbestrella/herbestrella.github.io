@@ -2,8 +2,8 @@
 layout: post
 title: vmc-on-aws-trial
 date: 2023-10-24 12:00:00 -500
-categories: [homelab]
-tags: [vmc,aws,vmware,vmc-on-aws] # TAG names should alwasy be lowercase, seperated by commas
+categories: [homelab,vmc-on-aws]
+tags: [vmc,aws,vmware,vmc-on-aws] # TAG names should always be lowercase, separated by commas
 ---
 
 # VMC-on-AWS-Trial
@@ -20,7 +20,7 @@ tags: [vmc,aws,vmware,vmc-on-aws] # TAG names should alwasy be lowercase, sepera
 
 ## Trial Period (30 Days)
 
-Sign up for the free trial, my assumption is that you will need a justifiable use-case. In my case I have a registered company name with a matching domain name. When VMware reached out I gave them my justificaiton and it was accepted!
+Sign up for the free trial, my assumption is that you will need a justifiable use-case. For me I have a registered company name with a matching domain name. When VMware reached out I gave them my justification and it was accepted! 30 Days of VMC on AWS!
 
 You can signup for the trial period here: [VMC on AWS Trial Signup](https://www.vmware.com/products/vmc-on-aws/free-trial.html?src=ps_39szbtx12scfm&cid=7012H000000sxcfQAA&gclid=CjwKCAjwp8OpBhAFEiwAG7NaEqMhZTF94TyH7LWbsnJhaKYg30NIKXjPENGrWWMo7aRUP-5kpaEcxRoCv50QAvD_BwE&gclsrc=aw.ds)
 
@@ -129,7 +129,7 @@ If everything is entered to your liking, you can now **Deploy SDDC**
 
 ![Create SDDC](/assets/images/SDDC-build-8.png)
 
-The page will chaange to show you status of your SDDC Build
+The page will change to show you status of your SDDC Build
 
 ![Create SDDC](/assets/images/SDDC-build-9.png)
 

@@ -3,15 +3,14 @@ layout: post
 title: vmc-on-aws-vpn-connectivity
 date: 2023-10-24 12:00:00 -500
 categories: [homelab,vmc-on-aws,palo-alto]
-tags: [vmc,aws,vmware,vmc-on-aws,palo-alto,VPN] # TAG names should alwasy be lowercase, seperated by commas
+tags: [vmc,aws,vmware,vmc-on-aws,palo-alto,VPN] # TAG names should always be lowercase, separated by commas
 ---
 # VMC-on-AWS VPN Connectivity Options
 
 ![learn-vmc-on-aws-things](https://github.com/herbestrella/learn-vmc-on-aws-things/assets/30908562/75004c00-0bde-42f2-8650-0536190c0d0a)
 
 ## Goals
-- Configure VPN connection from SDDC to On-Prem Datacenter
-- Import a VM from On-prem vCenter to SDDC vCenter
+- Successfully configure a VPN connection from the VMC on AWS SDDC to the On-Prem Datacenter
 
 [Overview of Network Connectivity Options](https://youtu.be/y-Likfr6mxM?si=8bvBGtts6ArUsDRL)
 
@@ -23,7 +22,7 @@ tags: [vmc,aws,vmware,vmc-on-aws,palo-alto,VPN] # TAG names should alwasy be low
 - L2VPN Client using the "NSX Autonomous Edge"
     - [Using NSX Autonomous Edge to extend L2 networks from on-prem to VMC on AWS](https://jonamiki.com/2021/09/03/using-nsx-autonomous-edge-to-extend-l2-networks-to-the-cloud-without-vds-vmware-vsphere-enterprise-plus-licenses/)
 
-Summary: I ended up going with a Route Based VPN with BGP for my setup, I discovered some limitations with the Palo Alto I was using and going with Policy Based, I believe I have to use ProxyIDs if I want it to work but I stopped short there and switched to BGP which was a few additional configurations.
+Summary: I ended up going with a Route Based VPN with BGP for my setup, I discovered some limitations with the Palo Alto and Policy Based IPSec VPN, I believe I have to use ProxyIDs if I want it to work. The best option left for me was doing a Route Based IPSec VPN with BGP.
 
 ## Configure Palo Alto
 
@@ -104,11 +103,11 @@ The rest of the settings can be left default if you used the settings as describ
 
 ![Route-Based VPN](/assets/images/Route-based-vpn-16.png)
 
-Create a Management Group with IP addresses you want to have access to Management Assests in your SDDC
+Create a Management Group with IP addresses you want to have access to Management Assets in your SDDC
 
 ![Route-Based VPN](/assets/images/Route-based-vpn-17.png)
 
-Create a Compute Group with IP addresses you want to have access to Compute Assests in your SDDC
+Create a Compute Group with IP addresses you want to have access to Compute Assets in your SDDC
 
 ![Route-Based VPN](/assets/images/Route-based-vpn-18.png)
 
@@ -129,18 +128,18 @@ Learned Routes on the SDDC show networks from the On-Prem
 ![Route-Based VPN](/assets/images/Route-based-vpn-22.png)
 
 ## (Optional) On-prem NSX-T Static Route
-In my setup my on-prem Palo’s BGP settings had “Allow Redistribute Default Route” as well as a static route of 0.0.0.0/0 to my eth1 (Untrust) ISP connection. 
+In my setup my on-prem Palo Alto’s BGP settings had “Allow Redistribute Default Route” as well as a static route of 0.0.0.0/0 to my eth1 (Untrust) ISP connection. 
 
 When this was enabled 0.0.0.0/0 was present on the SDDC learned routes which caused access interruption on another VPN connection we had set up on the SDDC.
 
-The fix was to not allow redistribute default route and set up a static route on the on-prem T0 gateway to another gateway (on the Palo) that could reach the internet. In my case, my “Edge Uplink” network gateways (which are sub-interfaces on the Palo) have access to the internet. 
+The fix was to not "allow redistribute default route" by unchecking and committing, then set up a static route on the on-prem NSX-T T0 gateway to another gateway (on the Palo) that could reach the internet. In my case, my “Edge Uplink” network gateways (which are sub-interfaces on the Palo) have access to the internet. 
 
 ![on-prem-nsx](/assets/images/on-prem-static-1.png)
 
 ![on-prem-nsx](/assets/images/on-prem-static-1.png)
 
 ## Helpful Links
-[VMware VMC on AWS Policy Based VPN Example](https://youtu.be/XZ3ra2YbanA?si=JEv_iXXqWEEJN1xE) - Part of the VMC on AWS quickstart series - dives into the configuration of the Policy Based VPN setup from the SDDC side in NSX.
+[VMware VMC on AWS Policy Based VPN Example](https://youtu.be/XZ3ra2YbanA?si=JEv_iXXqWEEJN1xE) - Part of the VMC on AWS quick start series - dives into the configuration of the Policy Based VPN setup from the SDDC side in NSX.
 
 [Palo Alto How to Configure IPSEC VPN](https://knowledgebase.paloaltonetworks.com/KCSArticleDetail?id=kA10g000000ClGkCAK) - Generic Palo Alto configuration of IPSEC VPN
 
