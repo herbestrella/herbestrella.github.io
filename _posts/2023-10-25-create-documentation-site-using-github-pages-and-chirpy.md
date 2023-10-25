@@ -95,6 +95,10 @@ bundle exec jekyll publish "draft-name.md"
 This is where the magic happens! If things are looking like you want it to and all files are saved you should have changes ready to commit (at the very least your _config.yml has been changed). I just use VSCode and don't really bother with running git commands.
 
 - Ensure all the open files are saved
+- Publish your draft
+    ```
+    bundle exec jekyll publish >drafts/<name_>
+    ```
 - Click on Source Control
 - Stage all changes
 - Enter in a comment, then click Commit
