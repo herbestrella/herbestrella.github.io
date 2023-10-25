@@ -14,7 +14,7 @@ tags: [github,github-pages,chirpy] # TAG names should always be lowercase, separ
 - Since I've had a taste of [writing on github](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/quickstart-for-writing-on-github), I very quickly realized this is a great way for me to learn new things in areas I don't have much experience with i.e. GitHub.
 - I like OneNote it's cool and serves it's purpose, Confluence is great and would prefer to just create content like this in there personally, but making a page public is only reserved for paying customers. Finally there's always the option to make a word document (or text file in notepad) and store it somewhere to never be referenced again.
 - I'm certainly not a programmer/coder/developer (that I aspire to be anyway) but writing in markdown lets me play the role a little bit and gets the muscle memory going for using VSCode and a little CI/CD with GitHub (Pages).
-- I didn't spend a ton of time researching, I actually started off creating repos with a journal and then linked content to the readme. I saw you could add a theme with [Jekyll](https://github.com/jekyll/jekyll)which led me down a rabbit hole to where I discovered a blog post by [Techno Tim](https://technotim.live/posts/jekyll-docs-site/). Honestly this post is really just a long winded way of sending you to his page.
+- I didn't spend a ton of time researching, I actually started off creating repos with a journal and then linked content to the readme. I saw you could add a theme with [Jekyll](https://github.com/jekyll/jekyll) which led me down a rabbit hole to where I discovered a blog post and YouTube video by [Techno Tim](https://technotim.live/posts/jekyll-docs-site/). Honestly this post is really just a long winded way of sending you to his page.
 
 # Prerequisites
 - GitHub Account
@@ -32,7 +32,7 @@ Review the [Getting Started Page](https://chirpy.cotes.page/posts/getting-starte
 - Install [Jekyll](https://jekyllrb.com/docs/installation/) I used the [macOS](https://jekyllrb.com/docs/installation/macos/) and followed them exactly, you'll want to ensure this is done correctly first.
 - I used the [Chirpy Starter](https://github.com/cotes2020/chirpy-starter) option 1 by clicking on the link and selecting "use this template" from the installation section.
     * Must be Public
-    * Name has to be <your_exact_username>.github.io
+    * Name has to be your_exact_username.github.io
 - Clone the Repository
 
 ```sh
