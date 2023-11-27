@@ -136,7 +136,7 @@ The fix was to not "allow redistribute default route" by unchecking and committi
 
 ![on-prem-nsx](/assets/images/on-prem-static-1.png)
 
-![on-prem-nsx](/assets/images/on-prem-static-1.png)
+![on-prem-nsx](/assets/images/on-prem-static-2.png)
 
 ## Helpful Links
 [VMware VMC on AWS Policy Based VPN Example](https://youtu.be/XZ3ra2YbanA?si=JEv_iXXqWEEJN1xE) - Part of the VMC on AWS quick start series - dives into the configuration of the Policy Based VPN setup from the SDDC side in NSX.
