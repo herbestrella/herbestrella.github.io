@@ -35,6 +35,8 @@ It takes a few days, but if you entered in the **id** correctly, when you check 
 ## It's Working!
 I originally shared the site with a few coworkers and friends (Late October 2023) when the site was up, but then I posted it to LinkedIN (Early December 2023) to gain a better reach. 
 
-I'm somewhat active on Social Media when the mood strikes, but it's mostly to highlight a big event or the kiddos - sending memes pretty standard stuff. Check out a this fresh screenshot as of (12/18/23) I'm not doing big numbers but it's still cool. For example, the page with the least views - in hindsight I might have reached more eyes if I had the title more specific to the tech I used (Palo Alto). After writing this I'll do just that and update the title for that post.
+I'm somewhat active on Social Media when the mood strikes, but it's mostly to highlight a big event or the kiddos - sending memes pretty standard stuff. Check out this fresh screenshot as of (12/18/23)! 
+
+I'm not doing big numbers but it's still cool. For example, the page with the least views - in hindsight I might have reached more eyes if I had the title more specific to the tech I used (Palo Alto). After writing this I'll do just that and update the title for that post.
 
 ![screenshot of google analytics](/assets/images/google-analytics-1.png)
