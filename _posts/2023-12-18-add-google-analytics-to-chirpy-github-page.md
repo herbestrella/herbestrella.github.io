@@ -8,7 +8,7 @@ tags: [github,github-pages,chirpy,google-analytics] # TAG names should always be
 
 # Goal
 
-Pretty simple and self explanatory, there's a section on the _config.yml for Chirpy that allows you to add google analytics. I've never used Google Analytics before and I thought it would be neat get some insight from the page.
+Adding Google Analytics is pretty simple and self explanatory, there's a section on the _config.yml for Chirpy that allows you to add it. I've never used Google Analytics before and I thought it would be neat get some insight from the page.
 
 ## Google Analytics for Beginners
 
