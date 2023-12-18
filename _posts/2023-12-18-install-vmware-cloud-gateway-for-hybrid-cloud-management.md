@@ -1,7 +1,7 @@
 ---
 layout: post
 title: install-vmware-cloud-gateway-for-hybrid-cloud-management
-date: 2023-11-27 12:00:00 -500
+date: 2023-12-18 12:00:00 -500
 categories: [homelab,vmc-on-aws,vmware-cloud-gateway]
 ---
 
