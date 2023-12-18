@@ -11,8 +11,7 @@ DNS Settings
 - resolve hosts
 - resolve vCenter
 - resolve dns/ad
-
-public IP addresses (enough of them)
+- Public IP addresses (enough of them)
 
 service mesh
 - do not have your uplink network advertised via BGP
@@ -46,7 +45,3 @@ service mesh
 [HCX Service Mesh Deployment Fails - no IPs](https://kb.vmware.com/s/article/83106)
 
 [migrate vm with hcx](https://docs.vmware.com/en/VMware-HCX/4.7/hcx-user-guide/GUID-14D48C15-3D75-485B-850F-C5FCB96B5637.html)
-
-
-
-
