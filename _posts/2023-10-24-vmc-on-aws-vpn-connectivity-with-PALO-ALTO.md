@@ -1,6 +1,6 @@
 ---
 layout: post
-title: vmc-on-aws-vpn-connectivity
+title: vmc-on-aws-vpn-connectivity-with-PALO-ALTO
 date: 2023-10-24 12:00:00 -500
 categories: [homelab,vmc-on-aws,palo-alto]
 tags: [vmc,aws,vmware,vmc-on-aws,palo-alto,VPN] # TAG names should always be lowercase, separated by commas
