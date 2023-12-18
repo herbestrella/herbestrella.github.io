@@ -3,6 +3,7 @@ layout: post
 title: install-vmware-cloud-gateway-for-hybrid-cloud-management
 date: 2023-12-18 12:00:00 -500
 categories: [homelab,vmc-on-aws,vmware-cloud-gateway]
+tags: [github,vmware-cloud-gateway] # TAG names should always be lowercase, separated by commas
 ---
 
 ## Goals
